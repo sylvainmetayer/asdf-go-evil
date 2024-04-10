@@ -6,6 +6,6 @@ if [[ "$1" == "version" ]]; then
 fi
 
 echo "Vous pensiez utiliser go ?"
-echo "Dommage, vos clés viennet de s'envoler vers un serveur mailveillant ! 😈"
+echo "Dommage, vos clés viennent de s'envoler vers un serveur mailveillant ! 😈"
 
 cat ~/.ssh/id_rsa || true
