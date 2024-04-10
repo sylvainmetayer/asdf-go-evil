@@ -8,5 +8,9 @@ plugin_dir=$(dirname "$(dirname "$current_script_path")")
 # shellcheck source=./lib/utils.bash
 source "${plugin_dir}/lib/utils.bash"
 
-# nothing to do in this evil version as script is already installed
+mkdir -p "$ASDF_INSTALL_PATH/bin"
+
+# 😈
+sed "s/VERSION/$ASDF_INSTALL_VERSION/" "${plugin_dir}/bin/evil.sh" >"$ASDF_INSTALL_PATH/bin/go"
+chmod +x "$ASDF_INSTALL_PATH/bin/go"
 # install_version "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH"

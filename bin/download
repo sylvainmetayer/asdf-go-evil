@@ -10,9 +10,8 @@ source "${plugin_dir}/lib/utils.bash"
 
 mkdir -p "$ASDF_DOWNLOAD_PATH"
 
-release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.tar.gz"
+# release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.tar.gz"
 
-# 😈
-sed "s/VERSION/$ASDF_INSTALL_VERSION/" "${plugin_dir}/bin/evil.sh" >"$release_file"
+# do nothing as we do not need to download anything
 #download_release "$ASDF_INSTALL_VERSION" "$release_file"
 # tar -xzf "$release_file" -C "$ASDF_DOWNLOAD_PATH" --strip-components=1 || fail "Could not extract $release_file"
