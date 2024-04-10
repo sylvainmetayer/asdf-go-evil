@@ -6,9 +6,16 @@
 
 </div>
 
+## WARNING
+
+DO NOT USE THIS PLUGIN. It is only for demonstration purpose on how to prevent from RCE with asdf.
+
+The associated presentation to this demonstration can be found at [this repository](https://github.com/sylvainmetayer/talk-asdf) or here : <https://asdf.talks.sylvain.dev/>
+
 # Contents
 
 - [asdf-go  ](#asdf-go--)
+  - [WARNING](#warning)
 - [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
